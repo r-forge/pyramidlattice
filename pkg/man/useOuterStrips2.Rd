@@ -26,7 +26,7 @@ height of left strip in number of lines.
 See useOuterStrips in package latticeExtra.
 }
 \value{
-An object of class `trellis'; essentially the same as ‘x’, but with strips modified.
+An object of class `trellis'; essentially the same as `x', but with strips modified.
 }
 \author{
 Erich Striessnig, adapted from useOuterStrips in latticeExtra by Deepayan Sarkar.

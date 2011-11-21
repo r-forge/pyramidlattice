@@ -9,7 +9,7 @@ This is the function used inside `pyramidlattice' to produce stacked, horizontal
 \details{
 See ?barchart2 (heR.Misc) and ?xyplot (lattice)
 }
-\value{A ‘trellis’ lattice graphics object}
+\value{A `trellis' lattice graphics object}
 \author{
 Erich Striessnig, adapted from the `barchart2' function included in Neil Klepeis' heR.Misc package.
 }

@@ -24,7 +24,7 @@ before passing the data to `pyramidlattice'.
 See examples below and ?barchart2 (heR.Misc) as well as ?xyplot (lattice) for details. 
 }
 \value{
-A ‘trellis’ lattice graphics object.
+A `trellis' lattice graphics object.
 }
 \references{
 heR.Misc package source:
@@ -35,13 +35,13 @@ http://www.exposurescience.org/heR.doc/library/heR.Misc/html/barchart2.html
 Erich Striessnig, adapted from the `barchart2' function included in Neil Klepeis' heR.Misc package.
 }
 \seealso{
-‘barchart’ is the original lattice function for plotting (univariate) barcharts in each panel.
+`barchart' is the original lattice function for plotting (univariate) barcharts in each panel.
 
-‘barchart2’ from heR.Misc package is Neil Klepeis' modification of barchart, dealing with grouped data by plotting stacked or side-by-side bars just like the bar plotting function in base R graphics.
+`barchart2' from heR.Misc package is Neil Klepeis' modification of barchart, dealing with grouped data by plotting stacked or side-by-side bars just like the bar plotting function in base R graphics.
 
-‘panel.pyramid’ is the panel function used to plot group data as stacked bars.
+`panel.pyramid' is the panel function used to plot group data as stacked bars.
 
-‘prepanel.default.bwplot2’ is the prepanel function used to specify default (relation = same) horizontal and vertical limits for each panel for stacked bars. Yet, in order to get the reverse limits for the male and the female panels, the limits have to be passed on to pyramidlattice using the limits-argument in scale (see ?xyplot).
+`prepanel.default.bwplot2' is the prepanel function used to specify default (relation = same) horizontal and vertical limits for each panel for stacked bars. Yet, in order to get the reverse limits for the male and the female panels, the limits have to be passed on to pyramidlattice using the limits-argument in scale (see ?xyplot).
 }
 \examples{
 
