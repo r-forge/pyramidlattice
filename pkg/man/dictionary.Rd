@@ -15,9 +15,9 @@ UN Country Codes
 }
 \source{http://esa.un.org/unpd/wpp/unpp/panel_population.htm}
 \examples{
-  data(dictionary)  
+  data(dictionary)
   head(dictionary)
-  
+
   getname(156,dictionary)
   getcode("China",dictionary)
 }

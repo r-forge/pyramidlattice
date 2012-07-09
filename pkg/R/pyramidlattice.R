@@ -1,10 +1,9 @@
-pyramidlattice <- function (x, data = parent.frame(), panel = panel, prepanel = prepanel, 
+pyramidlattice <-
+function (x, data = parent.frame(), panel = panel, prepanel = prepanel, 
     strip = TRUE, box.ratio = 2, groups = NULL, beside = FALSE, 
     horizontal = NULL, subset = TRUE, subscripts = !is.null(groups), 
     ...) 
 {
-    require(lattice)
-    require(grid)
     dots <- list(...)
     groups <- eval(substitute(groups), data, parent.frame())
     subset <- eval(substitute(subset), data, parent.frame())

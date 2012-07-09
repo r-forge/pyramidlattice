@@ -25,4 +25,3 @@ function (x, strip.lines = 1, strip.left.lines = 1)
   update(x, par.settings = par.settings, strip = new.strip,
          strip.left = new.strip.left, par.strip.text = list(cex = 1.1, lines = 0.75))
 }
-

@@ -26,7 +26,7 @@ height of left strip in number of lines.
 See useOuterStrips in package latticeExtra.
 }
 \value{
-An object of class `trellis'; essentially the same as `x', but with strips modified.
+An object of class `trellis'; essentially the same as ‘x’, but with strips modified.
 }
 \author{
 Erich Striessnig, adapted from useOuterStrips in latticeExtra by Deepayan Sarkar.
@@ -35,8 +35,6 @@ Erich Striessnig, adapted from useOuterStrips in latticeExtra by Deepayan Sarkar
 pyramidlattice, latticeExtra, useOuterStrips
 }
 \examples{
-
-require(lattice)
 
 data(EduDat)
 data(dictionary)
@@ -51,7 +49,6 @@ iEduDat$value[iEduDat$sex == "Male"] <- (-1) * iEduDat$value[iEduDat$sex == "Mal
 agegrs <- paste(seq(15,100,5),seq(19,104,5),sep="-")
 agegrs[length(agegrs)] <- "100+"
 
-lattice.options(axis.padding = list(numeric=0))
 x <- pyramidlattice(agegr ~ value| factor(sex,levels=c("Male","Female")) *
                                    factor(cc,levels=getcode(Countries,dictionary),labels=Countries) *
                                    factor(yr,levels=Years,labels=Years),

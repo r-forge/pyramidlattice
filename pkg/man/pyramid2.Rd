@@ -9,7 +9,7 @@ This is the function used inside `pyramidlattice' to produce stacked, horizontal
 \details{
 See ?barchart2 (heR.Misc) and ?xyplot (lattice)
 }
-\value{A `trellis' lattice graphics object}
+\value{A ‘trellis’ lattice graphics object}
 \author{
 Erich Striessnig, adapted from the `barchart2' function included in Neil Klepeis' heR.Misc package.
 }
@@ -19,7 +19,6 @@ heR.Misc package source:
 http://www.exposurescience.org/heR.doc/library/heR.Misc/html/barchart2.html
 }
 \examples{
-require(lattice)
 
 data(EduDat)
 data(dictionary)
@@ -34,7 +33,6 @@ iEduDat$value[iEduDat$sex == "Male"] <- (-1) * iEduDat$value[iEduDat$sex == "Mal
 agegrs <- paste(seq(15,100,5),seq(19,104,5),sep="-")
 agegrs[length(agegrs)] <- "100+"
 
-lattice.options(axis.padding = list(numeric=0))
 x <- pyramidlattice(agegr ~ value| factor(sex,levels=c("Male","Female")) *
                                    factor(cc,levels=getcode(Countries,dictionary),labels=Countries) *
                                    factor(yr,levels=Years,labels=Years),

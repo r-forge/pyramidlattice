@@ -218,4 +218,3 @@ function (x, data = NULL, allow.multiple = is.null(groups) ||
     class(foo) <- "trellis"
     foo
 }
-

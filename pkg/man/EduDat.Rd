@@ -33,7 +33,6 @@ Lutz, W., A. Goujon, S. KC, and W. Sanderson. 2007. Reconstruction of population
 KC, S., B. Barakat, A. Goujon, V. Skirbekk, and W. Lutz. 2010. Projection of populations by level of educational attainment, age, and sex for 120 countries for 2005-2050. Demographic Research 22:383-472.
 }
 \examples{
-library(reshape)
 
 data(EduDat)
 data(dictionary)

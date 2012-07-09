@@ -35,8 +35,6 @@ http://www.exposurescience.org/hosted-projects/inhalation-exposure-simulation-mo
 }
 \examples{
 
-require(lattice)
-
 data(EduDat)
 data(dictionary)
 # select the desired year, country, and education-scenario from EduDat
@@ -50,7 +48,6 @@ iEduDat$value[iEduDat$sex == "Male"] <- (-1) * iEduDat$value[iEduDat$sex == "Mal
 agegrs <- paste(seq(15,100,5),seq(19,104,5),sep="-")
 agegrs[length(agegrs)] <- "100+"
 
-lattice.options(axis.padding = list(numeric=0))
 x <- pyramidlattice(agegr ~ value| factor(sex,levels=c("Male","Female")) *
                                    factor(cc,levels=getcode(Countries,dictionary),labels=Countries) *
                                    factor(yr,levels=Years,labels=Years),

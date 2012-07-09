@@ -38,4 +38,3 @@ function (x, y, horizontal = TRUE, nlevels,
     }
     else prepanel.null()
 }
-
